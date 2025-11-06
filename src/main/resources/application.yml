@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: newmcp
+  ai:
+    mcp:
+      server:
+        name: new-mcp
+        version: 1.0.0
+        type: sync
+        protocol: STREAMABLE
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${ISSUER_URL}
+server:
+  port: 50003
